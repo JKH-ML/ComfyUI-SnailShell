@@ -55,7 +55,8 @@ This project is designed for content protection, hidden metadata sharing, and cr
 
 ---
 
-## 🔍 Chrome Extension: Flip the Shell (Work in Progress)
+## 🔍 Chrome Extension: Flip the Shell 
+(currently undergoing review on the Chrome Web Store)
 
 The **Flip the Shell** companion extension is currently in development. It will allow users to:
 - Hover over any Snail Shell image on the web.
