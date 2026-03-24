@@ -1,0 +1,958 @@
+{
+  "id": "38b4fce8-c00d-4364-b640-37fd3ea4f6a3",
+  "revision": 0,
+  "last_node_id": 24,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [
+        -82.40728759765625,
+        977.4319458007812
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.17.2",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "02f1b5c75e20d7931f53886f8e6ddfa02b000018513fde5c7c5a599a63b78224.png",
+        "image"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "SnailEncoder",
+      "pos": [
+        -758.4996337890625,
+        974.7613525390625
+      ],
+      "size": [
+        309.8316345214844,
+        78
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "snail_image",
+          "name": "snail_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "label": "snail_images",
+          "name": "snail_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "shell_image",
+          "name": "shell_image",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SnailEncoder",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 6,
+      "type": "SaveImage",
+      "pos": [
+        621.515380859375,
+        975.56201171875
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.17.2",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "SnailDecoder",
+      "pos": [
+        264.7562255859375,
+        977.0556030273438
+      ],
+      "size": [
+        287.5328063964844,
+        98
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "shell_image",
+          "name": "shell_image",
+          "type": "IMAGE",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            5
+          ]
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "label": "status",
+          "name": "status",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SnailDecoder",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 13,
+      "type": "SaveImage",
+      "pos": [
+        -384.42120361328125,
+        1379.542724609375
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.17.2",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "LoadImage",
+      "pos": [
+        -83.01763916015625,
+        1380.6329345703125
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.17.2",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "87e267165124604fbf9a9c2fbee22209fba37e923656b8eb7940d5b057e301df.png",
+        "image"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "SnailDecoder",
+      "pos": [
+        279.750244140625,
+        1379.8541259765625
+      ],
+      "size": [
+        287.5328063964844,
+        98
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "shell_image",
+          "name": "shell_image",
+          "type": "IMAGE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            9
+          ]
+        },
+        {
+          "label": "status",
+          "name": "status",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SnailDecoder",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 17,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        664.43115234375,
+        1380.6588134765625
+      ],
+      "size": [
+        226.5576171875,
+        739.2135620117188
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        },
+        {
+          "label": "audio",
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "label": "meta_batch",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "Filenames",
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "449839959f0153fb8a57211a9364c55163935ca9",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 19,
+        "save_metadata": false,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "no_preview": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00001_p10058_ynbvz_1774393359.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "AnimateDiff_00001_p10058.png",
+            "fullpath": "/data/ComfyUI/personal/deb998436c9a6a5e63111ebfa9cd9592/output/AnimateDiff_00001_p10058.mp4",
+            "label": "Normal",
+            "score": "0",
+            "cos_url": "https://rh-images-1252422369.cos.ap-beijing.myqcloud.com//deb998436c9a6a5e63111ebfa9cd9592/output/AnimateDiff_00001_p10058_ynbvz_1774393359.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        -394.3191833496094,
+        976.1942138671875
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "label": "image_urls",
+          "name": "image_urls",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.17.2",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "LoadImage",
+      "pos": [
+        -1087.0008544921875,
+        978.9739990234375
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3
+          ]
+        },
+        {
+          "label": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "cnr_id": "comfy-core",
+        "ver": "0.17.2",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ba452fe43873857d312a30bf81cc7800454fb810c1a427abadcbcc87466b7409.png",
+        "image"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        -1088.05517578125,
+        1383.2706298828125
+      ],
+      "size": [
+        261.6533203125,
+        777.6058959960938
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "meta_batch",
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "label": "vae",
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7
+          ]
+        },
+        {
+          "label": "frame_count",
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "label": "audio",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "label": "video_info",
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_LoadVideo",
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "449839959f0153fb8a57211a9364c55163935ca9",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": {
+        "video": "84659559fa0e3d1148c21ce2e630b12f55149f0c44ea22bb098c3232c55401b6.mp4",
+        "force_rate": 0,
+        "force_size": "Disabled",
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "choose video to upload": "image",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "84659559fa0e3d1148c21ce2e630b12f55149f0c44ea22bb098c3232c55401b6.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "type": "SnailEncoder",
+      "pos": [
+        -754.2903442382812,
+        1380.312255859375
+      ],
+      "size": [
+        309.8316345214844,
+        78
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "snail_image",
+          "name": "snail_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "snail_images",
+          "name": "snail_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "label": "shell_image",
+          "name": "shell_image",
+          "type": "IMAGE",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SnailEncoder",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 19,
+      "type": "Note",
+      "pos": [
+        -386.99200439453125,
+        802.116943359375
+      ],
+      "size": [
+        283.937255859375,
+        89.50163269042969
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "How it works ? ? ?\nEnable group bypassers one by one."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 20,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        -341.89129638671875,
+        611.5609130859375
+      ],
+      "size": [
+        236.74765014648438,
+        154
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "OPT_CONNECTION",
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "widget_ue_connectable": {}
+      }
+    },
+    {
+      "id": 21,
+      "type": "Note",
+      "pos": [
+        -94.50655364990234,
+        613.2670288085938
+      ],
+      "size": [
+        325.1680908203125,
+        276.0663146972656
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "A Chrome extension has also been developed for simpler and faster decoding. Search for \"flip the shell\" in the Chrome Web Store. (2026-03-25: Waiting for Google's review)\n\nIn Chrome, hover your mouse over the 'shell image' and click the 'view icon' to reveal hidden images/videos.\n\nIf you don't use chrome, check 'Flip the Shell' on my GitHub.\n- https://github.com/JKH-ML/flip-the-shell\n\nThe code for the custom node is also available on GitHub.\n- https://github.com/JKH-ML/ComfyUI-SnailShell\n\nTechnical issues or questions are welcomed\n- banghak2da@gmail.com\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 18,
+      "type": "Note",
+      "pos": [
+        -91.44682312011719,
+        2191.665771484375
+      ],
+      "size": [
+        311.77301025390625,
+        117.99122619628906
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "How to control video speed in the decoder? (local decoding)\n\nIf the video speed is too fast or too slow, adjust the frame_rates value in the 'Video Combine 🎥🅥🅗🅢' node. \n\nAlso, make sure the format is set to the desired type."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 24,
+      "type": "RIFE VFI",
+      "pos": [
+        -457.47381591796875,
+        2364.685546875
+      ],
+      "size": [
+        355.1194763183594,
+        198
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 4,
+      "inputs": [
+        {
+          "label": "frames",
+          "name": "frames",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "optional_interpolation_states",
+          "name": "optional_interpolation_states",
+          "shape": 7,
+          "type": "INTERPOLATION_STATES",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "widget_ue_connectable": {},
+        "Node name for S&R": "RIFE VFI"
+      },
+      "widgets_values": [
+        "rife47.pth",
+        10,
+        2,
+        true,
+        true,
+        1
+      ]
+    },
+    {
+      "id": 22,
+      "type": "Note",
+      "pos": [
+        -449.8203430175781,
+        2190.7197265625
+      ],
+      "size": [
+        346.1261901855469,
+        121.07421875
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "How to control video speed in the encoder?\n\nIf the video speed is too fast, Add VFI node directly in front of the encoder node. (Video Frame Interpolation)\n\n(e.g. your workflow - VAE decode - RIFE VFI- Snail in the Shell Encoder) \n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      2,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      3,
+      7,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      4,
+      1,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      5,
+      10,
+      0,
+      6,
+      0,
+      "IMAGE"
+    ],
+    [
+      6,
+      12,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      7,
+      11,
+      0,
+      12,
+      1,
+      "IMAGE"
+    ],
+    [
+      8,
+      14,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      15,
+      1,
+      17,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "image encoder",
+      "bounding": [
+        -1097.0008544921875,
+        902.5941772460938,
+        991.19091796875,
+        392.87164306640625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "image decoder (Can be replaced with a Chrome extension)",
+      "bounding": [
+        -92.40728759765625,
+        903.8319702148438,
+        992.456787109375,
+        391.8111572265625
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "video decoder (Can be replaced with a Chrome extension)",
+      "bounding": [
+        -93.01763916015625,
+        1306.254150390625,
+        990.661376953125,
+        839.7586669921875
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "video encoder",
+      "bounding": [
+        -1098.05517578125,
+        1305.942626953125,
+        993.634033203125,
+        840.6002807617188
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "workflowRendererVersion": "LG",
+    "ds": {
+      "scale": 0.5445000000000082,
+      "offset": [
+        1129.4513707469555,
+        -551.8438677560595
+      ]
+    },
+    "frontendVersion": "1.23.0",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "0246.VERSION": [
+      0,
+      0,
+      4
+    ],
+    "links_added_by_ue": [],
+    "ue_links": []
+  },
+  "version": 0.4
+}
