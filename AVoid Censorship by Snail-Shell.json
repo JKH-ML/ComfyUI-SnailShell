@@ -705,7 +705,7 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "A Chrome extension has also been developed for simpler and faster decoding. Search for \"flip the shell\" in the Chrome Web Store. (2026-03-25: Waiting for Google's review)\n\nIn Chrome, hover your mouse over the 'shell image' and click the 'view icon' to reveal hidden images/videos.\n\nIf you don't use chrome, check 'Flip the Shell' on my GitHub.\n- https://github.com/JKH-ML/flip-the-shell\n\nThe code for the custom node is also available on GitHub.\n- https://github.com/JKH-ML/ComfyUI-SnailShell\n\nTechnical issues or questions are welcomed\n- banghak2da@gmail.com\n"
+        "The official Chrome extension 'Flip the Shell' is now available! Search for it in the Chrome Web Store or use the link below.\n\nIn Chrome, hover your mouse over a 'shell image' and click the 'view icon' to reveal hidden images/videos instantly.\n\n- Chrome Web Store: https://chromewebstore.google.com/detail/flip-the-shell/opplmeompodbeojbbccnllpbjhcbnnbn\n- GitHub (Decoder): https://github.com/JKH-ML/flip-the-shell\n- GitHub (Nodes): https://github.com/JKH-ML/ComfyUI-SnailShell\n\nQuestions? banghak2da@gmail.com\n"
       ],
       "color": "#432",
       "bgcolor": "#653"
